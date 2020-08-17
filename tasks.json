@@ -1,0 +1,41 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"problemMatcher" : [
+				"$catkin-gcc",
+			],
+			"group": "build",
+			"label": "catkin: build",
+			"command": "${workspaceFolder}/.vscode/build-tools/build-catkin-ws.sh"
+		},
+		{
+			"type": "shell",
+			"problemMatcher" : [
+				"$catkin-gcc",
+			],
+			"group": "build",
+			"label": "catkin: build package",
+			"command": "${workspaceFolder}/.vscode/build-tools/build-catkin-ws.sh ${input:packageName}"
+		},
+		{
+			"type": "shell",
+			"problemMatcher" : [
+				"$catkin-gcc",
+			],
+			"group": "build",
+			"label": "catkin: rebuild",
+			"command": "${workspaceFolder}/.vscode/build-tools/rebuild-catkin-ws.sh"
+		},
+		{
+			"type": "shell",
+			"problemMatcher" : [
+				"$catkin-gcc",
+			],
+			"group": "build",
+			"label": "catkin: clean",
+			"command": "${workspaceFolder}/.vscode/build-tools/clean-catkin-ws.sh"
+		},
+	]
+}
